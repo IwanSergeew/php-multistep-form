@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul.multistep-form-head {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    list-style: none;
+}
+ul.multistep-form-head li {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.3em;
+}
+ul.multistep-form-head li.done {
+    background-color: rgba(0, 255, 0, 0.534);
+}
+ul.multistep-form-head li.current {
+    background-color: rgba(0, 204, 255, 0.534);
+}
